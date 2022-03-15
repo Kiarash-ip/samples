@@ -1,0 +1,28 @@
+.filter {
+  width: 100%;
+
+  &__container {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    &-item {
+      font-size: 2rem;
+      padding: 3rem 3rem 1rem;
+      border-bottom: 4px solid #0095eb;
+      border-radius: 1px;
+      transition: color 0.2s;
+      margin: 0 2rem;
+      cursor: pointer;
+
+      &:hover {
+        color: #0095eb;
+      }
+    }
+  }
+}

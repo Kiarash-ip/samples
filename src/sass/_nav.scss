@@ -1,0 +1,32 @@
+.nav {
+  display: flex;
+  width: 100%;
+  background-color: rgba(104, 104, 104, 0.1);
+
+  &__logo {
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 6rem;
+    padding: 2rem;
+  }
+
+  &__logo + &__item {
+    margin-left: auto;
+  }
+
+  &__item:last-child {
+    margin-right: 6rem;
+  }
+
+  &__item {
+    font-size: 3rem;
+    padding: 2rem 3rem;
+    // margin-right: 6rem;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: #fff;
+    }
+  }
+}
