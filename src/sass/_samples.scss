@@ -6,6 +6,7 @@
 
   .samples__items {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     row-gap: 2rem;
   }

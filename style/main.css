@@ -104,7 +104,7 @@ a {
   font-size: 2rem;
   color: #fff;
 }
-.header__heading a {
+.header__buttons-order, .header__buttons-return {
   display: inline-block;
   font-size: 1.7rem;
   background-color: #2600ff;
@@ -115,13 +115,17 @@ a {
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
-.header__heading a i {
+.header__buttons-order i, .header__buttons-return i {
   text-align: center;
   padding: 0 10px 0 0;
   vertical-align: baseline;
 }
-.header__heading a:hover {
+.header__buttons-order:hover, .header__buttons-return:hover {
   background-color: rgba(38, 0, 255, 0.7);
+}
+.header__buttons-return {
+  background-color: #ff00ea;
+  margin-right: 2rem;
 }
 
 .filter {
@@ -158,6 +162,7 @@ a {
 }
 .section__samples .samples__items {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   row-gap: 2rem;
 }
