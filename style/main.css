@@ -128,25 +128,27 @@ a {
   width: 100%;
 }
 .filter__container {
-  width: 70%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 2rem auto;
 }
 .filter__list {
   display: flex;
-  justify-content: space-evenly;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .filter__list-item {
   font-size: 2rem;
-  padding: 3rem 3rem 1rem;
-  border-bottom: 4px solid #0095eb;
-  border-radius: 1px;
-  transition: color 0.2s;
-  margin: 0 2rem;
+  padding: 5px 15px;
+  background-color: #0095eb;
+  border-radius: 20px;
+  color: #fff;
+  border: 1px solid #0095eb;
+  margin: 0 1rem;
   cursor: pointer;
 }
 .filter__list-item:hover {
   color: #0095eb;
+  background-color: #fff;
 }
 
 .section__samples {
