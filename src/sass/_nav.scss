@@ -1,7 +1,7 @@
 .nav {
   display: flex;
   width: 100%;
-  background-color: rgba(104, 104, 104, 0.1);
+  background-color: #fff;
 
   &__logo {
     font-size: 3rem;
@@ -9,6 +9,7 @@
     font-weight: bold;
     margin-left: 6rem;
     padding: 2rem;
+    cursor: pointer;
   }
 
   &__logo + &__item {
@@ -20,13 +21,34 @@
   }
 
   &__item {
-    font-size: 3rem;
     padding: 2rem 3rem;
-    // margin-right: 6rem;
     transition: background-color 0.2s ease;
+    position: relative;
 
-    &:hover {
-      background-color: #fff;
+    a {
+      font-size: 1.5rem;
+      color: inherit;
+      transition: color 0.2s ease;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 10%;
+      right: 0;
+      height: 80%;
+      width: 4px;
+      background-color: #0095eb;
+      transition: box-shadow 0.4s ease;
+    }
+
+    &:hover a {
+      color: #0095eb;
+    }
+
+    &:hover::after {
+      box-shadow: #0095eb -5px 0px 10px 0px;
+      // box-shadow: -5px 0px 10px #0095eb, -7px 0px 20px #0095eb;
     }
   }
 }

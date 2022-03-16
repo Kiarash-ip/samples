@@ -23,7 +23,7 @@ a {
 .nav {
   display: flex;
   width: 100%;
-  background-color: rgba(104, 104, 104, 0.1);
+  background-color: #fff;
 }
 .nav__logo {
   font-size: 3rem;
@@ -31,6 +31,7 @@ a {
   font-weight: bold;
   margin-left: 6rem;
   padding: 2rem;
+  cursor: pointer;
 }
 .nav__logo + .nav__item {
   margin-left: auto;
@@ -39,12 +40,30 @@ a {
   margin-right: 6rem;
 }
 .nav__item {
-  font-size: 3rem;
   padding: 2rem 3rem;
   transition: background-color 0.2s ease;
+  position: relative;
 }
-.nav__item:hover {
-  background-color: #fff;
+.nav__item a {
+  font-size: 1.5rem;
+  color: inherit;
+  transition: color 0.2s ease;
+}
+.nav__item::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  right: 0;
+  height: 80%;
+  width: 4px;
+  background-color: #0095eb;
+  transition: box-shadow 0.4s ease;
+}
+.nav__item:hover a {
+  color: #0095eb;
+}
+.nav__item:hover::after {
+  box-shadow: #0095eb -5px 0px 10px 0px;
 }
 
 .header {
