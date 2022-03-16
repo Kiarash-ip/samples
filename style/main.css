@@ -71,50 +71,57 @@ a {
   height: 70vh;
 }
 .header__bg {
-  background: url(../src/assets/images/bookingo-bg.jpeg);
+  background: url(../src/assets/images/bookingo-bg.jpeg) no-repeat center center/cover;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
 }
 .header__bg::after {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(68, 0, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 .header__heading {
-  width: 25ch;
-  -webkit-animation: typing 2s steps(22);
-          animation: typing 2s steps(22);
-  white-space: nowrap;
-  overflow: hidden;
-  font-family: monospace;
-  font-size: 5em;
-  color: #fff;
-  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  row-gap: 3rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1;
 }
-@-webkit-keyframes typing {
-  from {
-    width: 0;
-  }
+.header__heading h1 {
+  display: inline-block;
+  font-size: 5em;
+  color: #fff;
+  font-weight: 500;
+  z-index: 2;
+  font-style: italic;
 }
-@keyframes typing {
-  from {
-    width: 0;
-  }
+.header__heading p {
+  font-size: 2rem;
+  color: #fff;
 }
-@-webkit-keyframes blink {
-  50% {
-    border-color: transparent;
-  }
+.header__heading a {
+  display: inline-block;
+  font-size: 1.7rem;
+  background-color: #2600ff;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
+.header__heading a i {
+  text-align: center;
+  padding: 0 10px 0 0;
+  vertical-align: baseline;
+}
+.header__heading a:hover {
+  background-color: rgba(38, 0, 255, 0.7);
 }
 
 .filter {
@@ -150,7 +157,7 @@ a {
 .section__samples .samples__items {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 1rem;
+  row-gap: 2rem;
 }
 .section__samples .samples__item {
   width: 300px;
