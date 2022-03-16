@@ -121,11 +121,14 @@ a {
   vertical-align: baseline;
 }
 .header__buttons-order:hover, .header__buttons-return:hover {
-  background-color: rgba(38, 0, 255, 0.7);
+  background-color: rgba(38, 0, 255, 0.6);
 }
 .header__buttons-return {
   background-color: #ff00ea;
   margin-right: 2rem;
+}
+.header__buttons-return:hover {
+  background-color: rgba(255, 0, 234, 0.6);
 }
 
 .filter {

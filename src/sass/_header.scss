@@ -81,7 +81,7 @@
       }
 
       &:hover {
-        background-color: rgba(38, 0, 255, 0.7);
+        background-color: rgba(38, 0, 255, 0.6);
       }
     }
 
@@ -89,6 +89,10 @@
       @extend .header__buttons-order;
       background-color: rgb(255, 0, 234);
       margin-right: 2rem;
+
+      &:hover {
+        background-color: rgba(255, 0, 234, 0.6);
+      }
     }
   }
 }
