@@ -10,23 +10,21 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    row-gap: 2rem;
 
     &-item {
       font-size: 2rem;
       padding: 5px 15px;
-      background-color: #0095eb;
+      background-color: $color-blue;
       border-radius: 20px;
       color: #fff;
-      border: 1px solid #0095eb;
-      // border-bottom: 4px solid #0095eb;
-      // border-radius: 1px;
-      // transition: color 0.2s;
+      border: 1px solid $color-blue;
       margin: 0 1rem;
       cursor: pointer;
       transition: color 0.2s ease, background-color 0.2s ease;
 
       &:hover {
-        color: #0095eb;
+        color: $color-blue;
         background-color: #fff;
       }
     }

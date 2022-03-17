@@ -20,6 +20,11 @@ a {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 1230px) {
+  html {
+    font-size: 50%;
+  }
+}
 .nav {
   display: flex;
   width: 100%;
@@ -29,15 +34,13 @@ a {
   font-size: 3rem;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  margin-left: 6rem;
+  margin-right: auto;
+  margin-left: 5%;
   padding: 2rem;
   cursor: pointer;
 }
-.nav__logo + .nav__item {
-  margin-left: auto;
-}
-.nav__item:last-child {
-  margin-right: 6rem;
+.nav__item:first-child {
+  margin-right: 5%;
 }
 .nav__item {
   padding: 2rem 3rem;
@@ -92,17 +95,12 @@ a {
   transform: translate(-50%, -50%);
   z-index: 1;
 }
-.header__heading h1 {
-  display: inline-block;
+.header__heading h2 {
   font-size: 5em;
   color: #fff;
   font-weight: 500;
   z-index: 2;
   font-style: italic;
-}
-.header__heading p {
-  font-size: 2rem;
-  color: #fff;
 }
 .header__buttons-order, .header__buttons-return {
   display: inline-block;
@@ -116,19 +114,19 @@ a {
   transition: background-color 0.2s ease;
 }
 .header__buttons-order i, .header__buttons-return i {
-  text-align: center;
-  padding: 0 10px 0 0;
+  padding-right: 10px;
   vertical-align: baseline;
 }
-.header__buttons-order:hover, .header__buttons-return:hover {
-  background-color: rgba(38, 0, 255, 0.6);
+.header__buttons-order:hover, .header__buttons-return:hover, .header__buttons-order:focus, .header__buttons-return:focus {
+  background-color: #1e00cc;
+  outline: none;
 }
 .header__buttons-return {
   background-color: #ff00ea;
   margin-right: 2rem;
 }
-.header__buttons-return:hover {
-  background-color: rgba(255, 0, 234, 0.6);
+.header__buttons-return:hover, .header__buttons-return:focus {
+  background-color: #cc00bb;
 }
 
 .filter {
@@ -142,6 +140,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  row-gap: 2rem;
 }
 .filter__list-item {
   font-size: 2rem;
@@ -206,6 +205,7 @@ a {
 .section__samples .samples__item .samples__item-inf .icon {
   font-size: 3rem;
   margin-left: 2rem;
+  cursor: pointer;
 }
 .section__samples .samples__item .samples__item-inf h3 {
   font-size: 2.5rem;
@@ -219,7 +219,7 @@ a {
 .section__samples .samples__item .samples__item-inf > a {
   display: inline-block;
   margin-top: auto;
-  background-color: rgba(0, 204, 255, 0.7);
+  background-color: rgba(0, 149, 235, 0.7);
   padding: 2rem;
   font-size: 2rem;
   text-align: center;
@@ -228,7 +228,7 @@ a {
   transition: color 0.2s ease, background-color 0.2s ease;
 }
 .section__samples .samples__item .samples__item-inf > a:hover {
-  color: rgba(0, 204, 255, 0.7);
+  color: rgba(0, 149, 235, 0.7);
   background-color: #fff;
 }
 .section__samples .samples__item:hover .samples__item-inf {

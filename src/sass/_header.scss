@@ -27,41 +27,14 @@
     transform: translate(-50%, -50%);
     z-index: 1;
 
-    h1 {
-      display: inline-block;
+    h2 {
+      // display: block;
       font-size: 5em;
       color: #fff;
       font-weight: 500;
       z-index: 2;
       font-style: italic;
     }
-
-    p {
-      font-size: 2rem;
-      color: #fff;
-    }
-
-    // a {
-    //   display: inline-block;
-    //   font-size: 1.7rem;
-    //   background-color: rgb(38, 0, 255);
-    //   font-weight: bold;
-    //   color: #fff;
-    //   padding: 10px 20px;
-    //   border-radius: 5px;
-    //   cursor: pointer;
-    //   transition: background-color 0.2s ease;
-
-    //   i {
-    //     text-align: center;
-    //     padding: 0 10px 0 0;
-    //     vertical-align: baseline;
-    //   }
-
-    //   &:hover {
-    //     background-color: rgba(38, 0, 255, 0.7);
-    //   }
-    // }
   }
   &__buttons {
     &-order {
@@ -75,13 +48,14 @@
       cursor: pointer;
       transition: background-color 0.2s ease;
       i {
-        text-align: center;
-        padding: 0 10px 0 0;
+        padding-right: 10px;
         vertical-align: baseline;
       }
 
-      &:hover {
-        background-color: rgba(38, 0, 255, 0.6);
+      &:hover,
+      &:focus {
+        background-color: darken(rgb(38, 0, 255), 10%);
+        outline: none;
       }
     }
 
@@ -90,8 +64,9 @@
       background-color: rgb(255, 0, 234);
       margin-right: 2rem;
 
-      &:hover {
-        background-color: rgba(255, 0, 234, 0.6);
+      &:hover,
+      &:focus {
+        background-color: darken(rgb(255, 0, 234), 10%);
       }
     }
   }

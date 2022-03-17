@@ -7,17 +7,14 @@
     font-size: 3rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    margin-left: 6rem;
+    margin-right: auto;
+    margin-left: 5%;
     padding: 2rem;
     cursor: pointer;
   }
 
-  &__logo + &__item {
-    margin-left: auto;
-  }
-
-  &__item:last-child {
-    margin-right: 6rem;
+  &__item:first-child {
+    margin-right: 5%;
   }
 
   &__item {
@@ -38,17 +35,16 @@
       right: 0;
       height: 80%;
       width: 4px;
-      background-color: #0095eb;
+      background-color: $color-blue;
       transition: box-shadow 0.4s ease;
     }
 
     &:hover a {
-      color: #0095eb;
+      color: $color-blue;
     }
 
     &:hover::after {
-      box-shadow: #0095eb -5px 0px 10px 0px;
-      // box-shadow: -5px 0px 10px #0095eb, -7px 0px 20px #0095eb;
+      box-shadow: $color-blue -5px 0px 10px 0px;
     }
   }
 }
