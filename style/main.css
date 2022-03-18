@@ -113,8 +113,9 @@ a {
   background-color: #0095eb;
   transition: box-shadow 0.4s ease;
 }
-.nav__list-item:hover a {
+.nav__list-item:hover a, .nav__list-item:focus a {
   color: #0095eb;
+  outline: none;
 }
 .nav__list-item:hover::after {
   box-shadow: #0095eb -5px 0px 10px 0px;
@@ -157,10 +158,10 @@ a {
     font-size: 1.9rem;
     color: #fff;
   }
-  .nav__list-item:hover a {
+  .nav__list-item:hover a, .nav__list-item:focus a {
     color: #0095eb;
   }
-  .nav__list-item:hover {
+  .nav__list-item:hover, .nav__list-item:focus {
     background-color: #fff;
   }
   .nav__list-item::after {
@@ -262,29 +263,25 @@ a {
 
 .section__samples {
   background-color: rgba(104, 104, 104, 0.1);
-  padding: 4rem;
+  padding: 4rem 0;
   border-top: 1px solid #888;
 }
 .section__samples .samples__items {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: -webkit-min-content;
+  grid-template-rows: min-content;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  row-gap: 2rem;
-}
-@media only screen and (max-width: 1797px) {
-  .section__samples .samples__items {
-    -moz-column-gap: 4rem;
-         column-gap: 4rem;
-  }
+  justify-items: center;
+  row-gap: 1rem;
 }
 .section__samples .samples__item {
-  width: 300px;
-  height: 400px;
+  width: 200px;
+  height: 250px;
   margin: 0 1rem;
   position: relative;
   overflow: hidden;
-  border-radius: 5px;
+  border-radius: 2px;
   transition: width 0.3s ease;
 }
 .section__samples .samples__item:hover {
@@ -317,11 +314,11 @@ a {
   cursor: pointer;
 }
 .section__samples .samples__item .samples__item-inf h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding: 2rem;
 }
 .section__samples .samples__item .samples__item-inf > p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: left;
   padding: 2rem;
 }
@@ -329,8 +326,8 @@ a {
   display: inline-block;
   margin-top: auto;
   background-color: rgba(0, 149, 235, 0.7);
-  padding: 2rem;
-  font-size: 2rem;
+  padding: 1.5rem;
+  font-size: 1.7rem;
   text-align: center;
   color: #fff;
   font-weight: bold;

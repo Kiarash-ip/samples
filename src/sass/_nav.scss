@@ -98,8 +98,10 @@
         transition: box-shadow 0.4s ease;
       }
 
-      &:hover a {
+      &:hover a,
+      &:focus a {
         color: $color-blue;
+        outline: none;
       }
 
       &:hover::after {
@@ -148,11 +150,13 @@
       color: #fff;
     }
 
-    &:hover a {
+    &:hover a,
+    &:focus a {
       color: $color-blue;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: #fff;
     }
 
