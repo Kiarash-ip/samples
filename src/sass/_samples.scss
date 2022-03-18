@@ -3,18 +3,22 @@
   padding: 4rem 0;
   border-top: 1px solid #888;
 
-  .samples__items {
+  .samples__items > div {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     // display: flex;
     // justify-content: flex-start;
     // align-items: center;
     // // flex-wrap: wrap;
     // row-gap: 2rem;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: min-content;
-    justify-content: center;
-    justify-items: center;
-    row-gap: 1rem;
+    // display: grid;
+    // grid-template-columns: repeat(6, 1fr);
+    // grid-template-rows: min-content;
+    // justify-content: center;
+    // justify-items: center;
+    // row-gap: 1rem;
   }
 
   .samples__item {

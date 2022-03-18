@@ -266,14 +266,11 @@ a {
   padding: 4rem 0;
   border-top: 1px solid #888;
 }
-.section__samples .samples__items {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: -webkit-min-content;
-  grid-template-rows: min-content;
+.section__samples .samples__items > div {
+  margin: 0 auto;
+  display: flex;
   justify-content: center;
-  justify-items: center;
-  row-gap: 1rem;
+  flex-wrap: wrap;
 }
 .section__samples .samples__item {
   width: 200px;
