@@ -31,27 +31,27 @@ a {
   align-items: center;
   height: 60px;
   position: relative;
-  z-index: 20;
 }
 .nav__hamburger-container.open .nav__hamburger {
   transform: translateX(-100%);
   background: transparent;
 }
 .nav__hamburger-container.open .nav__hamburger::before {
-  transform: rotate(-45deg) translate(35px, 35px);
+  transform: rotate(-45deg) translate(30px, 30px);
 }
 .nav__hamburger-container.open .nav__hamburger::after {
-  transform: rotate(45deg) translate(35px, -35px);
+  transform: rotate(45deg) translate(30px, -30px);
 }
 .nav__hamburger-container {
+  z-index: 20;
   margin-right: 2rem;
   height: 60px;
-  width: 50px;
+  width: 40px;
   display: none;
   align-items: center;
 }
 .nav__hamburger-container .nav__hamburger {
-  width: 50px;
+  width: 40px;
   height: 5px;
   border-radius: 10px;
   background-color: #333;
@@ -123,24 +123,22 @@ a {
 @media only screen and (max-width: 800px) {
   .nav__list {
     background-color: #0095eb;
-    padding: 0;
+    padding-top: 60px;
     position: absolute;
-    top: 100%;
+    top: 0;
+    left: 0;
     right: 0;
     margin-right: 0;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
     flex-direction: column;
     z-index: 10;
     row-gap: 2rem;
-    transform: translateX(100%);
+    transform: translateY(calc(-100% - 60px));
     transition: all 0.3s ease;
     overflow: hidden;
   }
 
   .nav__list.open-list {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 @media only screen and (max-width: 800px) {
