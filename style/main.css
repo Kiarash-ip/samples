@@ -271,6 +271,7 @@ a {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  row-gap: 2rem;
 }
 .section__samples .samples__item {
   width: 200px;
@@ -336,4 +337,40 @@ a {
 }
 .section__samples .samples__item:hover .samples__item-inf {
   opacity: 1;
+}
+
+@media only screen and (min-width: 1520px) {
+  .row__one {
+    width: 1520px;
+  }
+}
+@media only screen and (max-width: 1520px) {
+  .row__one {
+    width: 1300px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .row__one {
+    width: 1080px;
+  }
+}
+@media only screen and (max-width: 1230px) {
+  .row__one {
+    width: 1070px;
+  }
+}
+@media only screen and (max-width: 1080px) {
+  .row__one {
+    width: 860px;
+  }
+}
+@media only screen and (max-width: 860px) {
+  .row__one {
+    width: 640px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .row__one {
+    width: 420px;
+  }
 }/*# sourceMappingURL=main.css.map */
