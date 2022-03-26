@@ -232,6 +232,11 @@ a {
     font-size: 4rem;
   }
 }
+@media only screen and (max-width: 600px) {
+  .header__heading h2 {
+    font-size: 3rem;
+  }
+}
 .filter {
   width: 100%;
 }
@@ -261,6 +266,11 @@ a {
   background-color: #fff;
 }
 
+@media only screen and (max-width: 768px) {
+  .filter__list-item {
+    font-size: 1.7rem;
+  }
+}
 .section__samples {
   background-color: rgba(104, 104, 104, 0.1);
   padding: 4rem 0;
@@ -284,6 +294,11 @@ a {
 }
 .section__samples .samples__item:hover {
   width: 400px;
+}
+@media only screen and (max-width: 768px) {
+  .section__samples .samples__item:hover {
+    width: 200px;
+  }
 }
 .section__samples .samples__item img {
   width: 100%;

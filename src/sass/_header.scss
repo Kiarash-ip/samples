@@ -82,3 +82,11 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .header__heading {
+    h2 {
+      font-size: 3rem;
+    }
+  }
+}

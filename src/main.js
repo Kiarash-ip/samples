@@ -1,5 +1,7 @@
-const menuBtn = document.querySelector(".nav__hamburger-container");
-const navList = document.querySelector(".nav__list");
+const $ = document;
+const menuBtn = $.querySelector(".nav__hamburger-container");
+const navList = $.querySelector(".nav__list");
+const samplesItems = $.querySelectorAll(".samples__item");
 let menuOpen = false;
 menuBtn.addEventListener("click", () => {
   if (!menuOpen) {
